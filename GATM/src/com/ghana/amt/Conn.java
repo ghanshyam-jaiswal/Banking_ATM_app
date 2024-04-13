@@ -9,8 +9,10 @@ public class Conn{
    Statement s;
    public Conn(){  
        try{  
-           Class.forName("com.mysql.cj.jdbc.Driver");  
+           class.forName("com.mysql.cj.jdbc.Driver");  
+//           class.forName("org.postgresql.Driver");  
            c =DriverManager.getConnection("jdbc:mysql:///bankmanagementsystem","root","root");    
+//           c =DriverManager.getConnection("jdbc:postgresql://localhost:5432/bankmanagementsystem","postgres","root");    
            s =c.createStatement(); 
           
          
